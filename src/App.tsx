@@ -191,7 +191,7 @@ function intervalGivenNotes(baseNote: string, relativeNote: string) {
 	}
 }
 
-// encontrar o interval sem acidente de uma note qualquer é fácil, pois basta contar; se quero a terça de C, basta contar 3 a partir de C
+// encontrar o intervalo sem acidente de uma note qualquer é fácil, pois basta contar; se quero a terça de C, basta contar 3 a partir de C
 // e esse é o primeiro passo para resolver o problema; uma vez que sabemos o interval sem o acidente, basta inserir o acidente; é aí que entra o modelo
 // se o acidente é 2m, por exemplo, isso significa que daremos apenas um passo a partir da note base, chegando numa note que seja a segunda, isso porque o interval de 2m é o menor interval de segunda possível, neste caso; portanto, basta buscar a posição da note base no modelo e, a partir dela, andar um passo, para buscar aquela note com acidente que, sem o acidente, é igual ao interval sem acidente que buscamos anteriormente
 function intervalWithAccidents(note: string, interval: string) {
@@ -382,6 +382,17 @@ function multiplyArray(array: any[], times: number): any[] {
 
 function App() {
 	const [scale, setScale] = useState<string[]>([])
+
+	useEffect(() => {
+		const audioFiles = LOW_TO_HIGH.map((note) => {
+			return `notes/${note}.mid.mp3`
+		})
+
+		audioFiles.forEach((file) => {
+		  const audio = new Audio(file);
+		  audio.load();
+		})
+	}, [])
 
 	const createScale = (key: string, pattern: string[]) => {
 		let newScale = [key]

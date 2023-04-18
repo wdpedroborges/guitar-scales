@@ -1,12 +1,3 @@
-# Guitar Scales
-## For those who want learn scales in a guitar
-
----
-
-Guitar Scales provides a simple and intuitive interface for learning scales in a guitar. You can choose one of the many scales available and the app will display it in the guitar, for you to see exactly where to play each note. Besides that, you can also play each and everyone of the notes, with consideration to their respective octaves, regarding their position on the arm of the guitar. The app is also responsive, adapting to different screen sizes, and provides a seamless user experience on both desktop and mobile devices.
-
----
-
 ![badge](https://img.shields.io/github/watchers/wdpedroborges/guitar-scales?style=social)
 ![badge](https://img.shields.io/github/stars/wdpedroborges/guitar-scales?style=social)
 ![badge](https://img.shields.io/github/license/wdpedroborges/guitar-scales)
@@ -15,11 +6,14 @@ Guitar Scales provides a simple and intuitive interface for learning scales in a
 ![badge](https://img.shields.io/badge/powered%20by-typescript-blue)
 ![badge](https://img.shields.io/badge/powered%20by-sass-blue)
 
----
+# Guitar Scales
+## For those who want learn scales in a guitar
+
+Guitar Scales provides a simple and intuitive interface for learning scales in a guitar. You can choose one of the many scales available and the app will display it in the guitar, for you to see exactly where to play each note. Besides that, you can also play each and everyone of the notes, with consideration to their respective octaves, regarding their position on the arm of the guitar. The app is also responsive, adapting to different screen sizes, and provides a seamless user experience on both desktop and mobile devices.
 
 ## Live Demo
 
-[Click here to see it]((wdpedroborges.github.io/guitar-scales))
+wdpedroborges.github.io/guitar-scales
 
 ## Features
 
